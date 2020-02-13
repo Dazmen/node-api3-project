@@ -8,7 +8,7 @@ server.use(express.json())
 server.use(logger);
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
+  res.send(`<h2>hello world!</h2>`);
 });
 server.use('/api/users', userRouter);
 server.use('/api/posts', postRouter);
